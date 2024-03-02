@@ -14,3 +14,8 @@ if (!Date.now) {
       return Number(new Date());
   };
 }
+// if (!Date.now) {
+//   Date.now = function now() {
+//       return +new Date;
+//   };
+// }

@@ -12,12 +12,18 @@ function sleep(ms) {
   return
 }
 
+function wait(ms) {
+  Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, ms);
+}
+
 //
 // Example usage
 //
 
 // Wait one second, then write "I waited long enough!" to the console.
 sleep(5000)
+console.log("I waited long enough!");
+wait(5000)
 console.log("I waited long enough!");
 
 // var elapsed_time = function(note){
