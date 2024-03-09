@@ -11,5 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "core-js-pure": "^3.36.0"
+  },
+  "devDependencies": {
+    "vite": "^5.1.5",
+    "vite-plugin-node-polyfills": "^0.21.0"
   }
 }
